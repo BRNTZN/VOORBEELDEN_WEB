@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>MEGAstore</display-name>
+  <welcome-file-list>
+    <welcome-file>bestellen</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>listeners.Listener</listener-class>
+  </listener>
+  <error-page>
+    <exception-type>java.lang.NumberFormatException</exception-type>
+    <location>/foutpagina.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.NullPointerException</exception-type>
+    <location>/foutpagina.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.SQLException</exception-type>
+    <location>/foutpagina.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.ServletException</exception-type>
+    <location>/foutpagina.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.IOException</exception-type>
+    <location>/foutpagina.jsp</location>
+  </error-page>
+</web-app>
